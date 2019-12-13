@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "commonjs",
+        "module": "UMD",
         "declaration": true,
         "outDir": "./lib",
         "strict": true
