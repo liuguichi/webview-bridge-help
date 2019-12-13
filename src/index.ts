@@ -3,11 +3,10 @@ import { isIOS } from './util';
 declare global {
   // @ts-ignore
   interface Window {
-    WebViewJavascriptBridge: IWebViewJavascriptBridge
-    WVJBCallbacks: ICallback[]
+    WebViewJavascriptBridge: IWebViewJavascriptBridge;
+    WVJBCallbacks: ICallback[];
   }
 }
-
 
 export interface IWebViewJavascriptBridge {
   callHandler: (nativeFuncName: string, params?: {}, callback?: (res: string) => void) => Promise<{} | string>;
