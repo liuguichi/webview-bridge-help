@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "target": "ESNext",
-        "module": "UMD",
+        "module": "ESNext",
         "declaration": true,
         "outDir": "./lib",
         "strict": true
