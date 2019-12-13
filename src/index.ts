@@ -9,7 +9,9 @@ export interface IWebViewJavascriptBridge {
   init: (callBack: (message: string, responseCallback: (data: any) => void) => void) => void;
 }
 
-export type ICallback = (bridge: IWebViewJavascriptBridge) => void;
+export interface ICallback {
+  (bridge: IWebViewJavascriptBridge): void
+}
 
 function connectToWebview(callback: ICallback) {
   if (window.WebViewJavascriptBridge) {
