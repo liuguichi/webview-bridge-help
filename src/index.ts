@@ -81,7 +81,7 @@ export function invokeNativeFunc(
   });
 }
 
-export * from './util'
+export * from './util';
 
 declare global {
   interface Window {
