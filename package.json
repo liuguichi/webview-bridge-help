@@ -1,6 +1,6 @@
 {
   "name": "webview-bridge-help",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "webview-bridge-help",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
