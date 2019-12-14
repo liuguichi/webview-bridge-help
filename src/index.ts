@@ -1,5 +1,12 @@
-import { isIOS } from './util';
+export const userAgent = window.navigator.userAgent.toLocaleLowerCase();
 
+export function isIOS(): boolean {
+  return /iphone|ipad|ipod|ios/.test(userAgent);
+}
+
+export function isAndroid(): boolean {
+  return /android/i.test(userAgent);
+}
 export interface IWebViewJavascriptBridge {
   callHandler: (nativeFuncName: string, params?: {}, callback?: (res: string) => void) => Promise<{} | string>;
   registerHandler: (
@@ -80,8 +87,6 @@ export function invokeNativeFunc(
     });
   });
 }
-
-export * from './util';
 
 declare global {
   interface Window {
