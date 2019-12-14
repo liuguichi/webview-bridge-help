@@ -1,4 +1,4 @@
-import { isIOS, isAndroid } from './util';
+import { isIOS } from './util';
 
 export interface IWebViewJavascriptBridge {
   callHandler: (nativeFuncName: string, params?: {}, callback?: (res: string) => void) => Promise<{} | string>;
