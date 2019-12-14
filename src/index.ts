@@ -81,7 +81,7 @@ export function invokeNativeFunc(
   });
 }
 
-export { isAndroid, isIOS }
+export { isAndroid, isIOS };
 
 declare global {
   interface Window {
